@@ -1,5 +1,11 @@
+import {
+  CalculatorFilled,
+  HeartFilled,
+  PercentageOutlined,
+  PieChartFilled,
+} from "@ant-design/icons";
+import { Button } from "antd";
 import React from "react";
-// import "./App.css";
 
 export type NavigationMenuProps = {};
 
@@ -10,17 +16,32 @@ const NavigationMenu = ({}: NavigationMenuProps) => {
         <div className="title">CalBud</div>
         <div className="nav-item-list">
           <a>
-            <div className="items">Macros Cals</div>
+            <div className="items">
+              <PieChartFilled className="icon" />
+              Macros Cals
+            </div>
           </a>
           <a>
-            <div className="items">BMI Calc</div>
+            <div className="items">
+              <CalculatorFilled className="icon" />
+              BMI Calc
+            </div>
           </a>
           <a>
-            <div className="items">Body Fat Calc</div>
+            <div className="items">
+              <PercentageOutlined className="icon" />
+              Body Fat Calc
+            </div>
           </a>
           <a>
-            <div className="items">Ideal Weight</div>
+            <div className="items">
+              <HeartFilled className="icon" />
+              Ideal Weight
+            </div>
           </a>
+        </div>
+        <div className="button-div">
+          <Button className="upgrade-button">Upgrade</Button>
         </div>
       </div>
     </>
