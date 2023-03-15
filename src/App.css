@@ -6,7 +6,7 @@
 .nav-bar {
   background-color: #f1ead9;
   height: 100vh;
-  width: 200px;
+  width: 210px;
   position: relative;
 }
 
@@ -19,9 +19,11 @@
 
 .items {
   text-align: center;
-  padding: 10px 0 10px 0;
+  padding: 10px 20px 10px 20px;
   color: #596996;
   font-size: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .items:hover {
@@ -46,5 +48,5 @@
   padding: 0 0 30px 0;
 }
 .icon {
-  padding-right: 10px;
+  padding: 5px 0 0 0;
 }
