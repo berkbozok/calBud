@@ -52,6 +52,24 @@
   align-items: center;
   padding: 0 0 30px 0;
 }
+
+.calculate-macros-div {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 0 30px 0;
+}
+
+.calculate-macros-button {
+  background-color: #f582ae;
+  font-weight: 700;
+  font-size: 20px;
+  width: 50%;
+  height: 70px;
+}
+
 .icon {
   padding: 5px 0 0 0;
 }
@@ -77,5 +95,6 @@
 
 .main-page {
   background-color: #fef6e4;
-  height: 100vh;
+  height: 100%;
+  padding: 10px 30px 10px 30px;
 }
