@@ -120,7 +120,6 @@ function Macros() {
               onAfterChange={onAfterChange3}
             />
           </div>
-
           <div>
             <p>Activity Level</p>
             <Radio.Group>
