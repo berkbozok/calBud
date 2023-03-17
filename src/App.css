@@ -71,6 +71,10 @@
   height: 70px;
 }
 
+.calculate-macros-button:hover {
+  color: white !important;
+}
+
 .icon {
   padding: 5px 0 0 0;
 }
