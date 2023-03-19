@@ -6,7 +6,6 @@ import {
 } from "@ant-design/icons";
 import { Button } from "antd";
 import React from "react";
-
 export type NavigationMenuProps = {};
 
 const NavigationMenu = ({}: NavigationMenuProps) => {
