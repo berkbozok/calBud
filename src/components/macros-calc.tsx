@@ -49,7 +49,6 @@ function Macros() {
       setSliderValue3(value);
     }
   };
-
   return (
     <>
       <div className="page-layout">
