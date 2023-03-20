@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../App.css";
-
 import { PieChartFilled } from "@ant-design/icons";
 import { Button, Radio, Slider } from "antd";
 
