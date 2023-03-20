@@ -56,79 +56,92 @@ function Macros() {
           Macros Calculator
         </div>
         <div className="line"></div>
-        <div className="main-page">
-          <h2>Calculate Your Macros</h2>
-          <p>
-            Craft your ideal macronutrient ratio now using our macros calculator
-          </p>
-          <div>
-            <p>System</p>
-            <Radio.Group>
-              <Radio.Button value="horizontal">Imperial</Radio.Button>
-              <Radio.Button value="vertical">Metric</Radio.Button>
-            </Radio.Group>
-          </div>
-          <div>
-            <p>I'm a</p>
-            <Radio.Group>
-              <Radio.Button value="horizontal">Male</Radio.Button>
-              <Radio.Button value="vertical">Female</Radio.Button>
-            </Radio.Group>
-          </div>
-          <div>
-            <p>What is your main weight goal?</p>
-            <Radio.Group>
-              <Radio.Button value="horizontal">Lose</Radio.Button>
-              <Radio.Button value="vertical">Maintain</Radio.Button>
-              <Radio.Button value="vertical">Gain</Radio.Button>
-            </Radio.Group>
-          </div>
-          <div>
+        <div className="main-page-layout">
+          <div className="main-page">
+            <h2>Calculate Your Macros</h2>
             <p>
-              I am <b>{sliderValue1}</b> years old
+              Craft your ideal macronutrient ratio now using our macros
+              calculator
             </p>
-            <Slider
-              defaultValue={25}
-              onChange={onChange1}
-              onAfterChange={onAfterChange1}
-            />
+            <div>
+              <p>System</p>
+              <Radio.Group>
+                <Radio.Button value="horizontal">Imperial</Radio.Button>
+                <Radio.Button value="vertical">Metric</Radio.Button>
+              </Radio.Group>
+            </div>
+            <div>
+              <p>I'm a</p>
+              <Radio.Group>
+                <Radio.Button value="horizontal">Male</Radio.Button>
+                <Radio.Button value="vertical">Female</Radio.Button>
+              </Radio.Group>
+            </div>
+            <div>
+              <p>What is your main weight goal?</p>
+              <Radio.Group>
+                <Radio.Button value="horizontal">Lose</Radio.Button>
+                <Radio.Button value="vertical">Maintain</Radio.Button>
+                <Radio.Button value="vertical">Gain</Radio.Button>
+              </Radio.Group>
+            </div>
+            <div>
+              <p>
+                I am <b>{sliderValue1}</b> years old
+              </p>
+              <Slider
+                defaultValue={25}
+                onChange={onChange1}
+                onAfterChange={onAfterChange1}
+              />
+            </div>
+            <div>
+              <p>
+                My Height: <b>{sliderValue2}</b> cm
+              </p>
+              <Slider
+                min={0}
+                max={250}
+                defaultValue={170}
+                onChange={onChange2}
+                onAfterChange={onAfterChange2}
+              />
+            </div>
+            <div>
+              <p>
+                Current Weight: <b>{sliderValue3}</b> kg
+              </p>
+              <Slider
+                min={0}
+                max={200}
+                defaultValue={75}
+                onChange={onChange3}
+                onAfterChange={onAfterChange3}
+              />
+            </div>
+            <div>
+              <p>Activity Level</p>
+              <Radio.Group>
+                <Radio.Button value="horizontal">Sedentary</Radio.Button>
+                <Radio.Button value="vertical">Moderate</Radio.Button>
+                <Radio.Button value="vertical">Active</Radio.Button>
+              </Radio.Group>
+            </div>
+            <div className="calculate-macros-div">
+              <Button className="calculate-macros-button">
+                Calculate Macros
+              </Button>
+            </div>
           </div>
-          <div>
-            <p>
-              My Height: <b>{sliderValue2}</b> cm
-            </p>
-            <Slider
-              min={0}
-              max={250}
-              defaultValue={170}
-              onChange={onChange2}
-              onAfterChange={onAfterChange2}
-            />
-          </div>
-          <div>
-            <p>
-              Current Weight: <b>{sliderValue3}</b> kg
-            </p>
-            <Slider
-              min={0}
-              max={200}
-              defaultValue={75}
-              onChange={onChange3}
-              onAfterChange={onAfterChange3}
-            />
-          </div>
-          <div>
-            <p>Activity Level</p>
-            <Radio.Group>
-              <Radio.Button value="horizontal">Sedentary</Radio.Button>
-              <Radio.Button value="vertical">Moderate</Radio.Button>
-              <Radio.Button value="vertical">Active</Radio.Button>
-            </Radio.Group>
-          </div>
-          <div className="calculate-macros-div">
-            <Button className="calculate-macros-button">
-              Calculate Macros
-            </Button>
+          <div className="daily-macro-title">
+            <h2>Your Daily Macro Goals</h2>
+            <h3>Total 2300 kcal</h3>
+            <h4>Daily Macros</h4>
+            <div className="daily-macro-value">
+              <div className="macro-value-div">75gr protein</div>
+              <div className="macro-value-div">36gr carbs</div>
+              <div className="macro-value-div">62gr fat</div>
+            </div>
           </div>
         </div>
       </div>

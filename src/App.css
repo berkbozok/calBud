@@ -8,6 +8,27 @@
   flex-direction: column;
   width: 100%;
 }
+.main-page-layout {
+  display: flex;
+  flex-direction: row;
+  background-color: #f1ead9;
+}
+.daily-macro-title {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; */
+}
+.daily-macro-value {
+  display: flex;
+  flex-direction: row !important;
+}
+.macro-value-div {
+  background-color: #fef6e4;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+}
 
 .nav-bar {
   background-color: #f1ead9;
