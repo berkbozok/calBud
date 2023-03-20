@@ -134,7 +134,7 @@ function Macros() {
             </div>
           </div>
           <div className="daily-macro-title">
-            <h2>Your Daily Macro Goals</h2>
+            <h2 className="right-side-title">Your Daily Macro Goals</h2>
             <h3>Total 2300 kcal</h3>
             <h4>Daily Macros</h4>
             <div className="daily-macro-value">

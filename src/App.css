@@ -19,6 +19,9 @@
   align-items: center;
   width: 50%; */
 }
+.right-side-title {
+  color: #001858;
+}
 .daily-macro-value {
   display: flex;
   flex-direction: row !important;
@@ -28,6 +31,8 @@
   margin: 10px;
   height: 70px;
   width: 70px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .nav-bar {
