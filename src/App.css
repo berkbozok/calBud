@@ -19,13 +19,16 @@
   align-items: center;
   width: 50%; */
 }
+
 .right-side-title {
   color: #001858;
 }
+
 .daily-macro-value {
   display: flex;
   flex-direction: row !important;
 }
+
 .macro-value-div {
   background-color: #fef6e4;
   margin: 10px;
