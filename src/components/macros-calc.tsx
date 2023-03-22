@@ -14,13 +14,11 @@ function Macros() {
       setSliderValue1(value);
     }
   };
-
   const onAfterChange1 = (value: number | [number, number]) => {
     if (typeof value === "number") {
       setSliderValue1(value);
     }
   };
-
   const onChange2 = (value: number | [number, number]) => {
     console.log("onChange2: ", value);
     if (typeof value === "number") {
